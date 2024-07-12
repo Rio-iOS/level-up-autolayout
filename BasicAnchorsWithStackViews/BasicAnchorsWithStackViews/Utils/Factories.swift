@@ -51,3 +51,16 @@ func makeProgressView() -> UIProgressView {
     return progressView
 }
 
+func makeStackView(
+    spacing: CGFloat,
+    axis: NSLayoutConstraint.Axis = .vertical,
+    alignment: UIStackView.Alignment = .fill
+) -> UIStackView {
+    let stackView = UIStackView()
+    stackView.translatesAutoresizingMaskIntoConstraints = false
+    stackView.axis = axis
+    stackView.spacing = spacing
+    stackView.distribution = .fill
+    stackView.alignment = alignment
+    return stackView
+}

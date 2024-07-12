@@ -15,6 +15,7 @@
 		349005232C41073D00C3849E /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349005222C41073D00C3849E /* Factories.swift */; };
 		349005262C4107E300C3849E /* UIColor+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349005252C4107E300C3849E /* UIColor+Extentions.swift */; };
 		349005292C41088C00C3849E /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349005282C41088C00C3849E /* RowView.swift */; };
+		349005512C41358B00C3849E /* CrossFadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349005502C41358B00C3849E /* CrossFadeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		349005222C41073D00C3849E /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 		349005252C4107E300C3849E /* UIColor+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extentions.swift"; sourceTree = "<group>"; };
 		349005282C41088C00C3849E /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		349005502C41358B00C3849E /* CrossFadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossFadeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				349005282C41088C00C3849E /* RowView.swift */,
+				349005502C41358B00C3849E /* CrossFadeView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			files = (
 				349005122C41071000C3849E /* ViewController.swift in Sources */,
 				349005292C41088C00C3849E /* RowView.swift in Sources */,
+				349005512C41358B00C3849E /* CrossFadeView.swift in Sources */,
 				3490050E2C41071000C3849E /* AppDelegate.swift in Sources */,
 				349005232C41073D00C3849E /* Factories.swift in Sources */,
 				349005262C4107E300C3849E /* UIColor+Extentions.swift in Sources */,

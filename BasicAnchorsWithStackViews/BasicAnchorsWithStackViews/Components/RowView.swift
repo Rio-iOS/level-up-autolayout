@@ -25,6 +25,8 @@ class RowView: UIView {
 
 private extension RowView {
     func setupViews(title: String, isOn: Bool) {
+        translatesAutoresizingMaskIntoConstraints = false
+        
         let titleLabel = makeLabel(withText: title)
         let onOffSwitch = makeSwitch(isOn: isOn)
         
