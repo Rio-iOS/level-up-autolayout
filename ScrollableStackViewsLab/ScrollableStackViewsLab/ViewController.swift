@@ -48,6 +48,8 @@ class RowView: UIView {
 private extension ViewController {
     func setupViews() {
         let stackView = makeStackView(withOrientation: .vertical)
+        stackView.isLayoutMarginsRelativeArrangement = true
+        stackView.directionalLayoutMargins = .init(top: 40, leading: 16, bottom: 40, trailing: -16)
         let scrollView = makeScrollView()
         
         
@@ -66,7 +68,9 @@ private extension ViewController {
             stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            // stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            // NOTE: We need to adjust our width to take into account the extra padding on the side (16x2 = 32)
+            stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 1, constant: -32),
             
             // scrollview
             scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
