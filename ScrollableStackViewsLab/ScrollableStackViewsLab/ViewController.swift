@@ -56,9 +56,13 @@ private extension ViewController {
         scrollView.addSubview(stackView)
         view.addSubview(scrollView)
         
-        for _ in 1...40 {
+        for i in 1...40 {
             let row = RowView()
             stackView.addArrangedSubview(row)
+            
+            if i % 5 == 0 {
+                stackView.addArrangedSubview(makeSpacerView(height: 4.0))
+            }
         }
         
 

@@ -13,6 +13,7 @@
 		349005402C41178900C3849E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3490053F2C41178900C3849E /* Assets.xcassets */; };
 		349005432C41178900C3849E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 349005422C41178900C3849E /* Base */; };
 		3490054C2C411AA400C3849E /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490054B2C411AA400C3849E /* Factories.swift */; };
+		3490054F2C41308500C3849E /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490054E2C41308500C3849E /* NSLayoutConstraint+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		349005422C41178900C3849E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		349005442C41178900C3849E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3490054B2C411AA400C3849E /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
+		3490054E2C41308500C3849E /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				349005362C41178700C3849E /* AppDelegate.swift */,
 				349005382C41178700C3849E /* SceneDelegate.swift */,
 				3490053A2C41178700C3849E /* ViewController.swift */,
+				3490054D2C41305700C3849E /* Extensions */,
 				3490054A2C411A9A00C3849E /* Utils */,
 				3490053F2C41178900C3849E /* Assets.xcassets */,
 				349005412C41178900C3849E /* LaunchScreen.storyboard */,
@@ -73,6 +76,14 @@
 				3490054B2C411AA400C3849E /* Factories.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		3490054D2C41305700C3849E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3490054E2C41308500C3849E /* NSLayoutConstraint+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				3490053B2C41178700C3849E /* ViewController.swift in Sources */,
 				349005372C41178700C3849E /* AppDelegate.swift in Sources */,
 				3490054C2C411AA400C3849E /* Factories.swift in Sources */,
+				3490054F2C41308500C3849E /* NSLayoutConstraint+Extensions.swift in Sources */,
 				349005392C41178700C3849E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

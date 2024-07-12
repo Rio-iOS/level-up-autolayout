@@ -37,3 +37,13 @@ func makeScrollView() -> UIScrollView {
     scrollView.translatesAutoresizingMaskIntoConstraints = false
     return scrollView
 }
+
+func makeSpacerView(height: CGFloat) -> UIView {
+    let view = UIView()
+    view.translatesAutoresizingMaskIntoConstraints = false
+    let heightAnchor = view.heightAnchor.constraint(equalToConstant: height)
+    heightAnchor.priority = .init(900)
+    heightAnchor.isActive = true
+    view.backgroundColor = .lightGray
+    return view
+}
