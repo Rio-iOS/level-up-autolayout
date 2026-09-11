@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  AdaptiveLayoutsOrientationLab
-//
-//  Created by 藤門莉生 on 2024/07/15.
-//
-
 import UIKit
 
 final class ViewController: UIViewController {

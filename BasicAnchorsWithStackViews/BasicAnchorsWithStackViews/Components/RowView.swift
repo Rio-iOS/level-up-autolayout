@@ -1,13 +1,7 @@
-//
-//  RowView.swift
-//  BasicAnchorsWithStackViews
-//
-//  Created by 藤門莉生 on 2024/07/12.
-//
-
 import Foundation
 import UIKit
 
+/// タイトルとスイッチを横に並べる、Stack View 向けのレイアウト教材。
 final class RowView: UIView {
     init(title: String, isOn: Bool) {
         super.init(frame: .zero)
@@ -18,6 +12,7 @@ final class RowView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    /// 教材で使う基準サイズ。実際の配置サイズは周囲の制約と優先度によって決まります。
     override var intrinsicContentSize: CGSize {
         CGSize(width: 200, height: 31)
     }

@@ -1,10 +1,3 @@
-//
-//  RedView.swift
-//  AdaptiveLayoutsChallenge1
-//
-//  Created by 藤門莉生 on 2024/07/15.
-//
-
 import Foundation
 import UIKit
 

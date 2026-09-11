@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  ContentHuggingAndCompressionResistanceLab
-//
-//  Created by 藤門莉生 on 2024/07/11.
-//
-
 import UIKit
 
 final class ViewController: UIViewController {

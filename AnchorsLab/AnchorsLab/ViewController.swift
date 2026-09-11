@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  AnchorsLab
-//
-//  Created by 藤門莉生 on 2024/07/11.
-//
-
 import UIKit
 
 final class ViewController: UIViewController {
@@ -47,7 +40,7 @@ private extension ViewController {
         view.trailingAnchor.constraint(equalTo: lowerRightButton.trailingAnchor, constant: 8).isActive = true
         // lowerRightButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -8).isActive = true
 
-        // option1: size eplicitly
+        // option1: size explicitly
         redView.widthAnchor.constraint(equalToConstant: 100).isActive = true
         redView.heightAnchor.constraint(equalToConstant: 50).isActive = true
 
