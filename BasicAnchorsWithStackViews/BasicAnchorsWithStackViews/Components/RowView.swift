@@ -1,40 +1,38 @@
-import Foundation
 import UIKit
 
-/// タイトルとスイッチを横に並べる、Stack View 向けのレイアウト教材。
+/// 複数行のタイトルとスイッチを、文字サイズに応じた高さで並べます。
 final class RowView: UIView {
+    private let titleLabel = UILabel()
+    private let toggle = UISwitch()
+
     init(title: String, isOn: Bool) {
         super.init(frame: .zero)
-        setupViews(title: title, isOn: isOn)
+        translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.text = title
+        titleLabel.font = .preferredFont(forTextStyle: .body)
+        titleLabel.adjustsFontForContentSizeCategory = true
+        titleLabel.numberOfLines = 0
+        toggle.isOn = isOn
+        toggle.accessibilityLabel = title
+        toggle.setContentHuggingPriority(.required, for: .horizontal)
+        toggle.setContentCompressionResistancePriority(.required, for: .horizontal)
+        titleLabel.isAccessibilityElement = false
+        [titleLabel, toggle].forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            addSubview($0)
+        }
+        NSLayoutConstraint.activate([
+            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+            titleLabel.topAnchor.constraint(equalTo: topAnchor),
+            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
+            toggle.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor, constant: 12),
+            toggle.trailingAnchor.constraint(equalTo: trailingAnchor),
+            toggle.centerYAnchor.constraint(equalTo: centerYAnchor),
+            heightAnchor.constraint(greaterThanOrEqualTo: toggle.heightAnchor),
+        ])
     }
 
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    /// 教材で使う基準サイズ。実際の配置サイズは周囲の制約と優先度によって決まります。
-    override var intrinsicContentSize: CGSize {
-        CGSize(width: 200, height: 31)
-    }
-}
-
-private extension RowView {
-    func setupViews(title: String, isOn: Bool) {
-        translatesAutoresizingMaskIntoConstraints = false
-
-        let titleLabel = makeLabel(withText: title)
-        let onOffSwitch = makeSwitch(isOn: isOn)
-
-        addSubview(titleLabel)
-        addSubview(onOffSwitch)
-
-        NSLayoutConstraint.activate([
-            // titleLabel
-            titleLabel.topAnchor.constraint(equalTo: topAnchor),
-            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
-            // onOffSwitch
-            onOffSwitch.trailingAnchor.constraint(equalTo: trailingAnchor),
-            onOffSwitch.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
-        ])
+        fatalError("Use init(title:isOn:)")
     }
 }

@@ -16,9 +16,22 @@
 		349005262C4107E300C3849E /* UIColor+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349005252C4107E300C3849E /* UIColor+Extentions.swift */; };
 		349005292C41088C00C3849E /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349005282C41088C00C3849E /* RowView.swift */; };
 		349005512C41358B00C3849E /* CrossFadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349005502C41358B00C3849E /* CrossFadeView.swift */; };
+		B8FC5C786B94A76E10F49B85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA7E44BF5DBA47D8A50F0A6 /* Foundation.framework */; };
+		EC487BAB1F7B727645194C6F /* AdaptiveRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949F8B247CB7130BE9E85F4 /* AdaptiveRowTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		917D357E95797F0819D7F221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 349005022C41071000C3849E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 349005092C41071000C3849E;
+			remoteInfo = BasicAnchorsWithStackViews;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2C8574B2A015737ABC542044 /* AdaptiveRowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdaptiveRowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3490050A2C41071000C3849E /* BasicAnchorsWithStackViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicAnchorsWithStackViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3490050D2C41071000C3849E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3490050F2C41071000C3849E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,9 +43,19 @@
 		349005252C4107E300C3849E /* UIColor+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extentions.swift"; sourceTree = "<group>"; };
 		349005282C41088C00C3849E /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		349005502C41358B00C3849E /* CrossFadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossFadeView.swift; sourceTree = "<group>"; };
+		A949F8B247CB7130BE9E85F4 /* AdaptiveRowTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdaptiveRowTests.swift; sourceTree = "<group>"; };
+		FFA7E44BF5DBA47D8A50F0A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C84698D44A8E6761163519D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FC5C786B94A76E10F49B85 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		349005072C41071000C3849E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,11 +66,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		107C58ADE15BAC580389FA9A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FFA7E44BF5DBA47D8A50F0A6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		349005012C41071000C3849E = {
 			isa = PBXGroup;
 			children = (
 				3490050C2C41071000C3849E /* BasicAnchorsWithStackViews */,
 				3490050B2C41071000C3849E /* Products */,
+				679C8875EEE3F062F55C4E1A /* Frameworks */,
+				620B8E089D6927BDB6BC26EB /* AdaptiveRowTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				3490050A2C41071000C3849E /* BasicAnchorsWithStackViews.app */,
+				2C8574B2A015737ABC542044 /* AdaptiveRowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +134,23 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		620B8E089D6927BDB6BC26EB /* AdaptiveRowTests */ = {
+			isa = PBXGroup;
+			children = (
+				A949F8B247CB7130BE9E85F4 /* AdaptiveRowTests.swift */,
+			);
+			name = AdaptiveRowTests;
+			path = AdaptiveRowTests;
+			sourceTree = "<group>";
+		};
+		679C8875EEE3F062F55C4E1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				107C58ADE15BAC580389FA9A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,6 +170,24 @@
 			productName = BasicAnchorsWithStackViews;
 			productReference = 3490050A2C41071000C3849E /* BasicAnchorsWithStackViews.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BD29278D8B8B986F5CF7188C /* AdaptiveRowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06F5DDAE09753F9572F99F5C /* Build configuration list for PBXNativeTarget "AdaptiveRowTests" */;
+			buildPhases = (
+				41D9AEAF2081DEDD13F28DD1 /* Sources */,
+				2C84698D44A8E6761163519D /* Frameworks */,
+				E845A0756066AE762F700A70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5FE522E1696F5F44D80E93E /* PBXTargetDependency */,
+			);
+			name = AdaptiveRowTests;
+			productName = AdaptiveRowTests;
+			productReference = 2C8574B2A015737ABC542044 /* AdaptiveRowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -149,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				349005092C41071000C3849E /* BasicAnchorsWithStackViews */,
+				BD29278D8B8B986F5CF7188C /* AdaptiveRowTests */,
 			);
 		};
 /* End PBXProject section */
@@ -160,6 +230,13 @@
 			files = (
 				349005172C41071100C3849E /* Assets.xcassets in Resources */,
 				3490051A2C41071100C3849E /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E845A0756066AE762F700A70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +257,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		41D9AEAF2081DEDD13F28DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC487BAB1F7B727645194C6F /* AdaptiveRowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5FE522E1696F5F44D80E93E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BasicAnchorsWithStackViews;
+			target = 349005092C41071000C3849E /* BasicAnchorsWithStackViews */;
+			targetProxy = 917D357E95797F0819D7F221 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		349005182C41071100C3849E /* LaunchScreen.storyboard */ = {
@@ -367,9 +461,50 @@
 			};
 			name = Release;
 		};
+		915CE6EAAB6E47F3809F9D4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rio.samples.AdaptiveRowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BasicAnchorsWithStackViews.app/BasicAnchorsWithStackViews";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1767187120CC7BDA6E406BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rio.samples.AdaptiveRowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BasicAnchorsWithStackViews.app/BasicAnchorsWithStackViews";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		06F5DDAE09753F9572F99F5C /* Build configuration list for PBXNativeTarget "AdaptiveRowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				915CE6EAAB6E47F3809F9D4B /* Release */,
+				E1767187120CC7BDA6E406BC /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		349005052C41071000C3849E /* Build configuration list for PBXProject "BasicAnchorsWithStackViews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
