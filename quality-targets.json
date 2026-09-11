@@ -1,0 +1,156 @@
+[
+  {
+    "kind": "app",
+    "name": "AdaptiveLayouts-SpotifyPlayer-WithSpacer",
+    "scheme": "AdaptiveLayouts-SpotifyPlayer-WithSpacer",
+    "project": "AdaptiveLayouts-SpotifyPlayer-WithSpacer/AdaptiveLayouts-SpotifyPlayer-WithSpacer.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "AdaptiveLayouts-SpotifyPlayer",
+    "scheme": "AdaptiveLayouts-SpotifyPlayer",
+    "project": "AdaptiveLayouts-SpotifyPlayer/AdaptiveLayouts-SpotifyPlayer.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "AdaptiveLayoutsAdjustSpacerLab",
+    "scheme": "AdaptiveLayoutsAdjustSpacerLab",
+    "project": "AdaptiveLayoutsAdjustSpacerLab/AdaptiveLayoutsAdjustSpacerLab.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "AdaptiveLayoutsChallenge1",
+    "scheme": "AdaptiveLayoutsChallenge1",
+    "project": "AdaptiveLayoutsChallenge1/AdaptiveLayoutsChallenge1.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "AdaptiveLayoutsLab",
+    "scheme": "AdaptiveLayoutsLab",
+    "project": "AdaptiveLayoutsLab/AdaptiveLayoutsLab.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "AdaptiveLayoutsLabByEnablingAndDisabling",
+    "scheme": "AdaptiveLayoutsLabByEnablingAndDisabling",
+    "project": "AdaptiveLayoutsLabByEnablingAndDisabling/AdaptiveLayoutsLabByEnablingAndDisabling.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "AdaptiveLayoutsOrientationLab",
+    "scheme": "AdaptiveLayoutsOrientationLab",
+    "project": "AdaptiveLayoutsOrientationLab/AdaptiveLayoutsOrientationLab.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "AdaptiveLayoutsUsingVisibilityLab",
+    "scheme": "AdaptiveLayoutsUsingVisibilityLab",
+    "project": "AdaptiveLayoutsUsingVisibilityLab/AdaptiveLayoutsUsingVisibilityLab.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "AnchorsLab",
+    "scheme": "AnchorsLab",
+    "project": "AnchorsLab/AnchorsLab.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "BasicAnchors",
+    "scheme": "BasicAnchors",
+    "project": "BasicAnchors/BasicAnchors.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "BasicAnchorsWithStackViews",
+    "scheme": "BasicAnchorsWithStackViews",
+    "project": "BasicAnchorsWithStackViews/BasicAnchorsWithStackViews.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "CHCRWithImagesLab",
+    "scheme": "CHCRWithImagesLab",
+    "project": "CHCRWithImagesLab/CHCRWithImagesLab.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "ContentHuggingAndCompressionResistanceLab",
+    "scheme": "ContentHuggingAndCompressionResistanceLab",
+    "project": "ContentHuggingAndCompressionResistanceLab/ContentHuggingAndCompressionResistanceLab.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "IntrinsicContentSize-SpotifyPlayer",
+    "scheme": "IntrinsicContentSize-SpotifyPlayer",
+    "project": "IntrinsicContentSize-SpotifyPlayer/IntrinsicContentSize-SpotifyPlayer.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "IntrinsicContentSizeLab",
+    "scheme": "IntrinsicContentSizeLab",
+    "project": "IntrinsicContentSizeLab/IntrinsicContentSizeLab.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "LayoutMarginsGuideLab",
+    "scheme": "LayoutMarginsGuideLab",
+    "project": "LayoutMarginsGuideLab/LayoutMarginsGuideLab.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "MarginGuideSpacerViewLab",
+    "scheme": "MarginGuideSpacerViewLab",
+    "project": "MarginGuideSpacerViewLab/MarginGuideSpacerViewLab.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "ReadableContentGuideLab",
+    "scheme": "ReadableContentGuideLab",
+    "project": "ReadableContentGuideLab/ReadableContentGuideLab.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "SafeAreaLab",
+    "scheme": "SafeAreaLab",
+    "project": "SafeAreaLab/SafeAreaLab.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "ScrollableStackViewsLab",
+    "scheme": "ScrollableStackViewsLab",
+    "project": "ScrollableStackViewsLab/ScrollableStackViewsLab.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "StackViewDemo",
+    "scheme": "StackViewDemo",
+    "project": "StackViewDemo/StackViewDemo.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "StackViewLab",
+    "scheme": "StackViewLab",
+    "project": "StackViewLab/StackViewLab.xcodeproj",
+    "workspace": null
+  }
+]
