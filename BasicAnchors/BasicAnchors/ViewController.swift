@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 
 private extension ViewController {
     func setupNavigation() {
-        
+
     }
     func setupViews() {
         let offlineLabel = makeLabel(withText: "Offline")

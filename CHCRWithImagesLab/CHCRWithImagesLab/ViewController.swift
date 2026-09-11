@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ private extension ViewController {
         let imageView = makeImageView(named: "rush")
         let label = makeLabel(withText: "Title")
         let button = makeButton(withText: "Get Started")
-        
+
         view.addSubview(imageView)
         view.addSubview(label)
         view.addSubview(button)
@@ -34,7 +34,7 @@ private extension ViewController {
         imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        
+
         label.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 8).isActive = true
         label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
         label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
@@ -47,7 +47,7 @@ private extension ViewController {
         imageView.setContentHuggingPriority(.init(249), for: .vertical)
         imageView.setContentCompressionResistancePriority(.init(749), for: .vertical)
     }
-    
+
     func makeImageView(named: String) -> UIImageView {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -55,7 +55,7 @@ private extension ViewController {
         imageView.contentMode = .scaleAspectFit
         return imageView
     }
-    
+
     func makeLabel(withText text: String) -> UILabel {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -64,7 +64,7 @@ private extension ViewController {
         label.backgroundColor = .yellow
         return label
     }
-    
+
     func makeButton(withText text: String) -> UIButton {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false

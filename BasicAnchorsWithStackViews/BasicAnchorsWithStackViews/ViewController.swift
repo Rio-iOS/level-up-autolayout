@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -25,7 +25,7 @@ private extension ViewController {
 
         // crossFadeView
         let crossFadeView = CrossFadeView()
-        
+
         let gaplessPlaybackRow = RowView(title: "Gapless Playback", isOn: true)
         let hideSongsRow = RowView(title: "Hide Unplayable Songs", isOn: true)
         let enableNormalizationRow = RowView(title: "Enable Audio Normalization", isOn: true)
@@ -42,7 +42,7 @@ private extension ViewController {
         containerStackView.addArrangedSubview(rowContainerStackView)
 
         view.addSubview(containerStackView)
-        
+
         NSLayoutConstraint.activate([
             // containerStackView
             containerStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),

@@ -7,12 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+
         setupViews()
     }
 }
@@ -32,12 +32,12 @@ private extension ViewController {
         // topLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         // topLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8).isActive = true
         // topLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-       
+
         // view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: bottomLabel.bottomAnchor).isActive = true
         // bottomLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         // view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: bottomLabel.bottomAnchor, constant: 8).isActive = true
         // bottomLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        
+
         NSLayoutConstraint.activate([
             topLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
             topLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -49,7 +49,7 @@ private extension ViewController {
             trailingLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
     }
-    
+
     func makeLabel(withText text: String) -> UILabel {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false

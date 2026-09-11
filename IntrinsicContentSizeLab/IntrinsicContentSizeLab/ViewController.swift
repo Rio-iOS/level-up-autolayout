@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ private extension ViewController {
         view.addSubview(label3)
         view.addSubview(label4)
         view.addSubview(bigLabel)
-        
+
         bigLabel.translatesAutoresizingMaskIntoConstraints = false
         bigLabel.text = "BigLabel"
         bigLabel.backgroundColor = .yellow
@@ -48,7 +48,7 @@ private extension ViewController {
         bigLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 8).isActive = true
 
     }
-    
+
     func makeLabel(withText text: String) -> UILabel {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false

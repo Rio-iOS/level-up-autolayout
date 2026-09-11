@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,43 +34,43 @@ private extension ViewController {
         view.addSubview(progressView)
         view.addSubview(previewEndLabel)
         view.addSubview(spotifyButton)
-        
+
         NSLayoutConstraint.activate([
             // albumImage
             albumImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             albumImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             albumImage.heightAnchor.constraint(equalTo: albumImage.widthAnchor, multiplier: 1),
             albumImage.widthAnchor.constraint(equalToConstant: view.bounds.width),
-            
+
             // trackLabel
             trackLabel.topAnchor.constraint(equalTo: albumImage.bottomAnchor, constant: 8),
             trackLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
             trackLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8),
-            
+
             // albumLabel
             albumLabel.topAnchor.constraint(equalTo: trackLabel.bottomAnchor, constant: 8),
             albumLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
             albumLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8),
-            
+
             // playButton
             playButton.topAnchor.constraint(equalTo: albumLabel.bottomAnchor, constant: 8),
             playButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
             playButton.widthAnchor.constraint(equalToConstant: buttonHeight),
             playButton.heightAnchor.constraint(equalToConstant: buttonHeight),
-            
+
             // previewStartLabel
             previewStartLabel.centerYAnchor.constraint(equalTo: playButton.centerYAnchor),
             previewStartLabel.leadingAnchor.constraint(equalTo: playButton.trailingAnchor, constant: 8),
-            
+
             // progressView
             progressView.centerYAnchor.constraint(equalTo: previewStartLabel.centerYAnchor),
             progressView.leadingAnchor.constraint(equalTo: previewStartLabel.trailingAnchor, constant: 8),
-            
+
             // previewEndLabel
             previewEndLabel.centerYAnchor.constraint(equalTo: progressView.centerYAnchor),
             previewEndLabel.leadingAnchor.constraint(equalTo: progressView.trailingAnchor, constant: 8),
             previewEndLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8),
-            
+
             // spotifyButton
             spotifyButton.topAnchor.constraint(equalTo: progressView.bottomAnchor, constant: 32),
             spotifyButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),

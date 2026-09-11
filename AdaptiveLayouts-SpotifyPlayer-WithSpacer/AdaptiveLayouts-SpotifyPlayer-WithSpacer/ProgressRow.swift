@@ -8,16 +8,16 @@
 import Foundation
 import UIKit
 
-class ProgressRow: UIView {
+final class ProgressRow: UIView {
     init() {
         super.init(frame: .zero)
         setupViews()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override var intrinsicContentSize: CGSize {
         .init(width: 200, height: buttonHeight)
     }
@@ -29,12 +29,12 @@ private extension ProgressRow {
         let previewStartLabel = makePreviewLabel(withText: "0：00")
         let progressView = makeProgressView()
         let previewEndLabel = makePreviewLabel(withText: "0：30")
-        
+
         addSubview(playButton)
         addSubview(previewStartLabel)
         addSubview(progressView)
         addSubview(previewEndLabel)
-       
+
         NSLayoutConstraint.activate([
             // playButton
             playButton.topAnchor.constraint(equalTo: topAnchor),
